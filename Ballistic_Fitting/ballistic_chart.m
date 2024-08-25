@@ -1,6 +1,6 @@
 clc;
-initial_vel = 8:0.1:10;
-tar_dist = 1.5:0.1:6.5;
+initial_vel = 24:0.1:27;
+tar_dist = 1.5:0.1:10.5;
 
 chart = zeros(length(initial_vel), length(tar_dist));
 n = length(initial_vel)* length(tar_dist);

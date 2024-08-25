@@ -2,9 +2,9 @@ function [angle, is_valid] = ballistic_find_angle(initial_vel, tar_dist)
 
 %initial_vel=15;
 air_den = 1.293;
-proj_area = .02^2*pi;
+proj_area = .0084^2*pi;
 cd = (0.47*air_den*proj_area)/2;
-mass = 0.041;
+mass = 0.0032;
 y_dot =@(t,y)([y(3); y(4); -cd*sqrt(y(3)^2+y(4)^2)*y(3); -9.8-cd*sqrt(y(3)^2+y(4)^2)./mass*y(4)]); %insert function to be solved
 
 target = [tar_dist;0];
